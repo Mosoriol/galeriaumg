@@ -18,7 +18,7 @@
                with font-awesome or any other icon font library -->
         
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/inicio') }}" class="nav-link">
                  <i class="fas fa-home"></i>
                   <p>Inicio</p>
                 </a>
@@ -26,7 +26,7 @@
               
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/usuarios') }}" class="nav-link">
                   <i class="fas fa-users"></i>
                   <p>Usuarios</p>
                 </a>
@@ -34,7 +34,7 @@
 
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/proyectos') }}" class="nav-link">
                   <i class="fas fa-tools"></i>
                   <p>Proyectos</p>
                 </a>
@@ -42,7 +42,7 @@
 
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/biografias') }}" class="nav-link">
                   <i class="fas fa-book-open"></i>
                   <p>Biografias</p>
                 </a>
@@ -50,7 +50,7 @@
 
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/slider') }}" class="nav-link">
                   <i class="fab fa-slideshare"></i>
                   <p>Slider</p>
                 </a>
@@ -58,7 +58,7 @@
 
 
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{url('/mensajes') }}" class="nav-link">
                   <i class="far fa-comment"></i>
                   <p>Mensajes</p>
                 </a>

@@ -23,3 +23,14 @@ Auth::routes();
 Route::view('/', 'welcome');
 
 Route::get('/inicio', 'InicioController@index');
+
+
+//frontend
+Route::get('/', 'FrontEndController@inicio');
+
+Route::view('/datos', 'modulos.datos');
+Route::put('/datos', 'UsuariosController@update');
+Route::get('/usuarios', 'UsuariosController@index');
+Route::get('/crear-usuarios', 'UsuariosController@create');
+Route::post('/crear-usuarios', 'UsuariosController@store');
+Route::delete('/usuarios/{id}', 'UsuariosController@destroy');
