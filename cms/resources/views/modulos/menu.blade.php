@@ -50,7 +50,7 @@
 
 
               <li class="nav-item">
-                <a href="{{url('/slider') }}" class="nav-link">
+                <a href="{{url('/slide') }}" class="nav-link">
                   <i class="fab fa-slideshare"></i>
                   <p>Slider</p>
                 </a>

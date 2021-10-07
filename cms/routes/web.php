@@ -34,3 +34,7 @@ Route::get('/usuarios', 'UsuariosController@index');
 Route::get('/crear-usuarios', 'UsuariosController@create');
 Route::post('/crear-usuarios', 'UsuariosController@store');
 Route::delete('/usuarios/{id}', 'UsuariosController@destroy');
+
+
+Route::get('/slide', 'SlideController@index');
+Route::post('/slide', 'SlideController@store');
