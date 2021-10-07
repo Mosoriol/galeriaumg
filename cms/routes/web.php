@@ -38,3 +38,4 @@ Route::delete('/usuarios/{id}', 'UsuariosController@destroy');
 
 Route::get('/slide', 'SlideController@index');
 Route::post('/slide', 'SlideController@store');
+Route::delete('/slide/{id}', 'SlideController@destroy');

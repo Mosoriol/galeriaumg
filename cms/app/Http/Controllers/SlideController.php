@@ -16,7 +16,8 @@ class SlideController extends Controller
      */
     public function index()
     {
-        return view('modulos.slide');
+        $slide = DB::select('select * from slide');
+        return view('modulos.slide')->with('slide', $slide);
     }
 
     /**
@@ -50,48 +51,15 @@ class SlideController extends Controller
         return redirect('slide');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Slide  $slide
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Slide $slide)
+    
+    public function destroy($id)
     {
-        //
-    }
+        $slide = Slide::find($id);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Slide  $slide
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Slide $slide)
-    {
-        //
-    }
+        if(Storage::delete('public/'.$slide->imagen)){
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Slide  $slide
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Slide $slide)
-    {
-        //
+            Slide::destroy($id);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Slide  $slide
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Slide $slide)
-    {
-        //
+    return redirect('slide');
     }
 }

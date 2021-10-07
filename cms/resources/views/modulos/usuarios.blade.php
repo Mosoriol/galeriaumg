@@ -8,9 +8,9 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Gestor de usuarios</h1>
+            <h1 class="p-3 mb-2 bg-info text-white rounded-top text-center" >Gestor de usuarios</h1>
             <a href="{{url('/crear-usuarios') }}">
-              <button class="btn btn-primary">Crear un nuevo usuario</button>
+              <button class="btn btn-primary text-center">Crear un nuevo usuario</button>
             
           </div><!-- /.col -->
         </div><!-- /.row -->
