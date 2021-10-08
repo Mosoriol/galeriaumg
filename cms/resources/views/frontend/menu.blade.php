@@ -22,9 +22,9 @@
                         
                 <ul class="nav navbar-nav">
 
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html ">Inicio</a></li>
                     <li><a href="#top">Proyectos</a></li>
-                    <li><a href="Excursiones-Todas">Biografias</a></li>
+                    <li><a href="Excursiones-Todas">Biografias de egresados</a></li>
                     <li><a href="#contactenos">Contáctenos</a></li>
 
                 </ul>

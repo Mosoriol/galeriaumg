@@ -42,9 +42,9 @@
 
 
               <li class="nav-item">
-                <a href="{{url('/biografias') }}" class="nav-link">
+                <a href="{{url('/categoriasproyectos') }}" class="nav-link">
                   <i class="fas fa-book-open"></i>
-                  <p>Biografias</p>
+                  <p>Categoria proyectos</p>
                 </a>
               </li>
 

@@ -29,47 +29,41 @@
 
         <div class="row" id="top">
             
-            <h1 class="text-center text-info"><b>Contenido</b></h1>
+            <h1 class="text-center text-info"><b>Categorias de proyectos</b></h1>
+
+            @foreach($categoriasproyectos as $ctg)
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
     
                    <a href="#" style="color: black;">
                        
-                        <h3>Carro inteligente con arduino</h3>
-
+                        <h3>{{ $ctg -> nombre }}</h3>      
+                
                    </a> 
         
                 </div>
+
+                @endforeach
+
+        </div>
+
+         <div class="row" id="top">
+            
+            <h1 class="text-center text-info"><b>Biografias de egresados</b></h1>
+
+            @foreach($categoriasproyectos as $ctg)
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
     
                    <a href="#" style="color: black;">
                        
-                        <h3>sistema de ventas</h3>
-
+                        <h3>{{ $ctg -> nombre }}</h3>      
+                
                    </a> 
         
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-    
-                   <a href="#" style="color: black;">
-                       
-                        <h3>Chatbot</h3>
-
-                   </a> 
-        
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-    
-                   <a href="#" style="color: black;">
-                       
-                        <h3></h3>
-
-                   </a> 
-        
-                </div>
+                @endforeach
 
         </div>
 
@@ -139,7 +133,7 @@
 
                     <h4 class="blockquote-reverse text-primary">
                         <ul>
-                          <li><span class="glyphicon glyphicon-phone"></span>  (57)(4) 234 56 43</li>
+                          <li><span class="glyphicon glyphicon-phone"></span>  (502) 77550895</li>
                           <li><span class="glyphicon glyphicon-map-marker"></span>  Zona 1 santa cruz del Quiche</li>
                           <li><span class="glyphicon glyphicon-envelope"></span>  umgquiche@correo.com</li>    
                         </ul>      

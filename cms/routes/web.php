@@ -25,11 +25,9 @@ Route::view('/', 'welcome');
 Route::get('/inicio', 'InicioController@index');
 
 
-//frontend
-Route::get('/', 'FrontEndController@inicio');
-
 Route::view('/datos', 'modulos.datos');
 Route::put('/datos', 'UsuariosController@update');
+
 Route::get('/usuarios', 'UsuariosController@index');
 Route::get('/crear-usuarios', 'UsuariosController@create');
 Route::post('/crear-usuarios', 'UsuariosController@store');
@@ -39,3 +37,11 @@ Route::delete('/usuarios/{id}', 'UsuariosController@destroy');
 Route::get('/slide', 'SlideController@index');
 Route::post('/slide', 'SlideController@store');
 Route::delete('/slide/{id}', 'SlideController@destroy');
+
+Route::get('/categoriasproyectos', 'CategoriasproyectosController@index');
+Route::post('/categoriasproyectos', 'CategoriasproyectosController@store');
+Route::put('/categoriaproyectos/{id}', 'CategoriasproyectosController@update');
+Route::delete('/ctg/{id}', 'CategoriasproyectosController@destroy');
+
+//frontend
+Route::get('/', 'FrontEndController@inicio');
