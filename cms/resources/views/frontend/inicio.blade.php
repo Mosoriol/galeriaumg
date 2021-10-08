@@ -29,11 +29,11 @@
 
         <div class="row" id="top">
             
-            <h1 class="text-center text-info"><b>Categorias de proyectos</b></h1>
+            <h1 class="text-center text-info bg-warning text-white rounded-top "><b>Proyectos de estudiantes</b></h1>
 
             @foreach($categoriasproyectos as $ctg)
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center ">
     
                    <a href="#" style="color: black;">
                        
@@ -49,7 +49,7 @@
 
          <div class="row" id="top">
             
-            <h1 class="text-center text-info"><b>Biografias de egresados</b></h1>
+            <h1 class="text-center text-info bg-info text-white rounded-top "><b>Biografias de egresados</b></h1>
 
             @foreach($categoriasproyectos as $ctg)
 

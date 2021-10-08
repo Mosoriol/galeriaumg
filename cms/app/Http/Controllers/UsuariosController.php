@@ -119,8 +119,7 @@ class UsuariosController extends Controller
     
     }
 
-    DB::table('users')->where('id', auth()->user()->id)->update(['name' => $datos['name']
-, 'email' => $datos['email'], 'password'=> Hash::make($datos['password'])]);
+    DB::table('users')->where('id', auth()->user()->id)->update(['name' => $datos['name'], 'email' => $datos['email'], 'password'=> Hash::make($datos['password'])]);
 
     return redirect('datos');
 }

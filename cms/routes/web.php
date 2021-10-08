@@ -43,5 +43,9 @@ Route::post('/categoriasproyectos', 'CategoriasproyectosController@store');
 Route::put('/categoriaproyectos/{id}', 'CategoriasproyectosController@update');
 Route::delete('/ctg/{id}', 'CategoriasproyectosController@destroy');
 
+Route::get('/proyectos', 'ProyectosController@index');
+Route::get('/crear-proyecto', 'ProyectosController@create');
+Route::post('/crear-proyecto', 'ProyectosController@store');
+
 //frontend
 Route::get('/', 'FrontEndController@inicio');
