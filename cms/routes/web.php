@@ -46,6 +46,20 @@ Route::delete('/ctg/{id}', 'CategoriasproyectosController@destroy');
 Route::get('/proyectos', 'ProyectosController@index');
 Route::get('/crear-proyecto', 'ProyectosController@create');
 Route::post('/crear-proyecto', 'ProyectosController@store');
+Route::get('/proyecto/{proyectos}/edit', 'ProyectosController@edit');
+Route::put('/proyecto/{proyectos}', 'ProyectosController@update')->name('actualizar-proyecto');
+Route::delete('eliminar-proyecto/{proyectos}', 'ProyectosController@destroy')->name('eliminar-proyecto');
+
+Route::get('galeria/{id}', 'GaleriasController@create');
+Route::post('galeria/{id}', 'GaleriasController@store');
+Route::delete('eliminar-img/{id}', 'GaleriasController@destroy');
+
+
+Route::get('/mensajes', 'MensajeController@index');
+Route::get('/leer-mensaje/{id}', 'MensajeController@show');
 
 //frontend
 Route::get('/', 'FrontEndController@inicio');
+Route::get('Proyectos-todos', 'FrontEndController@Proyectos');
+Route::get('Proyecto/{id}', 'FrontEndController@Proyecto');
+Route::post('/', 'FrontEndController@Mensajes');

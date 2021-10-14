@@ -7,8 +7,8 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Gestor de Proyectos</h1>
+          <div class="col-sm-12">
+            <h1 class="p-3 mb-2 bg-info text-white rounded-top text-center">Gestor de Proyectos</h1>
 
             <a href="{{ url('crear-proyecto') }}">
               <button class="btn btn-primary">Agregar nuevo proyecto</button>
@@ -41,7 +41,7 @@
                     <th>Categoria</th>
                       <th>Portada</th>
                         <th>Descripcion</th>
-                          <th></th>
+                          <th>Acciones</th>
 
                 </tr>
 
@@ -56,7 +56,28 @@
                   <td><img src="storage/{{ $proyecto->portada }}" class="w-50"></td>
                   <td>{{ $proyecto->descripcion }}</td>
 
-                    <td></td>
+                    <td>
+                      <a href="{{ url('galeria/'.$proyecto->id) }}">
+
+                        <button class="btn btn-success">Galeria</button><br>
+
+                      </a>
+
+                       <a href="{{ url('proyecto/'.$proyecto->id).'/edit' }}">
+
+                        <button class="btn btn-primary">Editar</button><br>
+
+                      </a>
+
+                      <form method="post" action="{{ route('eliminar-proyecto' , ['proyectos' => $proyecto->id]) }}">
+                        
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-danger" type="submit" >Eliminar</button>
+
+                      </form>
+
+                    </td>
 
                 </tr>
 

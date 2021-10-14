@@ -36,14 +36,14 @@
                 
                 <div class="col-8">
 
-                  <h2 >Titulo slide</h2>
+                  <h2 >Título para slide:</h2>
                   <input type="text" name="titulo" class="form-control">
               </div>
 
 
               <div class="col-8">
 
-                  <h2 >Descripcion</h2>
+                  <h2 >Descripción:</h2>
                   <input type="text" name="descripcion" class="form-control">
               </div>
 
@@ -58,7 +58,7 @@
                 <div class="col-8" class="text-center">
                     <br>
               <br>
-              <button type="submit" class="btn btn-outline-warning text-center">Agregar al slide</button>
+              <button type="submit" class="btn btn-outline-info text-center">Agregar al slider</button>
               </div>
               </div>
             </form>
@@ -70,8 +70,8 @@
     <thead>
       
 <tr>
-  <th>Titulo</th>
-   <th>Descripcion</th>
+  <th>Título</th>
+   <th>Descripción</th>
     <th>Imagen</th>
      <th></th>
 

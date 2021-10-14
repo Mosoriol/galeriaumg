@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Crear usuario</h1>
+            <h1 class="p-3 mb-2 bg-info text-white rounded-top text-center">Crear usuario</h1>
             
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -22,7 +22,7 @@
 
       	<div class="row">
 
-	<div class="col-4">
+	<div class="col-6">
 
 			<div class="card">
 
@@ -30,10 +30,10 @@
             <form method="post" novalidate="">
             @csrf
 
-            <h2>Nombre</h2>
+            <h2>Nombres:</h2>
             <input type="text" name="name" class="form-control">
 
-            <h2>Correo electronico</h2>
+            <h2>Correo electronico:</h2>
 
             <input type="email" name="email" class="form-control @error('email') 
             is-invalid @enderror">
@@ -41,10 +41,10 @@
             @error ('email')
 
             <br>
-            <p class="alert alert-danger">El correo ya esta registrado</p>
+            <p class="alert alert-danger">El correo ya esta registrado.</p>
             @enderror
 
-            <h2>Contraseña</h2>
+            <h2>Contraseña:</h2>
             <input type="password" name="password" class="form-control">
 
             <h2>Rol</h2>
@@ -56,7 +56,7 @@
 
             </select>
             <br>
-            <button type="submit" class="btn btn-primary btn-lg">Crear usuario</button>
+            <button type="submit" class="btn btn-primary btn-lg">Crear usuario.</button>
 
           </form>
 

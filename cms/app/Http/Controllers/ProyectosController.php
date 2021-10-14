@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Proyectos;
 use Illuminate\Http\Request;
 use App\Categoriasproyectos;
+use Illuminate\Support\Facades\Storage;
 class ProyectosController extends Controller
 {
     /**
@@ -52,21 +53,10 @@ class ProyectosController extends Controller
 
 
 
-
-    public function show(Proyectos $proyectos)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Proyectos  $proyectos
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Proyectos $proyectos)
     {
-        //
+        $categoriasproyectos = Categoriasproyectos::all();
+        return view('modulos.editar-proyecto' , compact('proyectos' , 'categoriasproyectos'));
     }
 
     /**
@@ -78,7 +68,24 @@ class ProyectosController extends Controller
      */
     public function update(Request $request, Proyectos $proyectos)
     {
-        //
+        $datos = request();
+
+        $proyectos->titulo = $datos['titulo'];
+         $proyectos->descripcion = $datos['descripcion'];
+          $proyectos->id_categoriaproyectos = $datos['id_categoriaproyectos'];
+
+          if(request('portadaNueva')){
+
+            Storage::delete('public/'.$proyectos->portada);
+
+            $rutaImg = $request['portadaNueva']->store('proyectos' , 'public');
+
+            $proyectos->portada = $rutaImg;
+
+          }
+
+          $proyectos->save();
+          return redirect('proyectos');
     }
 
     /**
@@ -89,6 +96,11 @@ class ProyectosController extends Controller
      */
     public function destroy(Proyectos $proyectos)
     {
-        //
+        if(Storage::delete('public/'.$proyectos->portada)){
+
+            Proyectos::destroy($proyectos->id);
+        }
+
+        return redirect('proyectos');
     }
 }

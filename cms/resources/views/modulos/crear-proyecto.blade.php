@@ -7,8 +7,8 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Crear nuevo proyecto</h1>
+          <div class="col-sm-8">
+            <h1 class="p-3 mb-2 bg-info text-white rounded-top text-center">Crear nuevo proyecto</h1>
             
           </div><!-- /.col -->
         </div><!-- /.row -->
