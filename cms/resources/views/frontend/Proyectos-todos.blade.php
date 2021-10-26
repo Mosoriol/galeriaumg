@@ -3,6 +3,8 @@
 
         
      <div class="row" id="articulos">
+        <div class="container">
+            <div class="text-center">
 
             <h1 class="text-center text-info bg-info width=25px"><b>Proyectos</b></h1>
 
@@ -25,13 +27,23 @@
 
                 </li>
 
+
+
                 @endforeach
+
+
 
 
             </ul>
 
 
+            
 
+
+
+
+        </div>
+        </div>
         </div>
 
         @endsection

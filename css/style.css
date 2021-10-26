@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+	margin: 10;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
@@ -47,7 +47,7 @@ SLIDE
 	top:-95px;
 	text-align:center;
 	z-index:1;
-	color:white;
+	color:black;
 	background: rgba(0,0,0,.5);
 }
 
@@ -91,6 +91,7 @@ TOP
 
 #top div{	
 	padding:30px 20px;
+	color:black;
 }
 
 /*=====  Fin de TOP  ======*/
@@ -102,6 +103,7 @@ ARTICULOS
 #articulos ul li{
 	position:relative;
 	padding:20px;
+	background: black;
 }
 
 #articulos ul li button{
@@ -125,7 +127,7 @@ CONTÁCTENOS
 =============================================*/
 
 footer#contactenos iframe{
-	height:320px;
+	height:250px;
 }
 
 footer#contactenos h4{
@@ -136,8 +138,8 @@ footer#contactenos ol{
 	position: relative;
 	list-style:none;
 	margin:auto;
-	width:215px;
-	background: silver;
+	width:200px;
+	background: black;
 }
 	
 footer#contactenos ol li a{
@@ -148,18 +150,24 @@ footer#contactenos ol li a{
 	margin:20px 5px;
 	text-align:center;
 	line-height:52px;
-	color:rgba(0,50,100,1);
-	background:white;
+	color:rgba(1,2,10,0);
+	background:black;
 }
 
 footer#contactenos #formulario{
-	background:rgba(0,50,100,1);
+	background:rgba(0,0,0,0);
 	padding:40px;
 }
 
 footer#contactenos #formulario form input{
 	margin:20px auto;
 }
+
+sub-footer  {
+	background:#272727;
+	padding:30px;
+
+	}
 
 /*=====  Fin de CONTÁCTENOS  ======*/
 
@@ -172,34 +180,38 @@ ESCRITORIO GRANDE
 	/*Logotipo*/
 
 	#logo img{
-		padding:20px 30px;
+		padding:10px 20px;
 	}
 
 	/*Botonera*/
 
 	nav#botonera{
-		margin-top: 1.2%;
-		width: 60%;
+		margin-top: 50px;
+		width: 100%;
+		background:black;
 	}
 
 	nav#botonera ul{
 		width: 100%;
+		background: black;
+		margin-top: 50px;
 
 	}
 
 	nav#botonera ul li{
-		width: 18%;	
+		width: 40%;	
 		text-align: center;
-		background: #fff;
-		margin: 3% 1%;
+		background: #000000;
+		margin: 20% 20%;
 	}
 
 	nav#botonera ul li a{
-		height: 45px;
+		height: 65px;
 		line-height: 12px;
 		color: #111;
-		background: #deefdc;
-		font-weight: 100;
+		background: #000000;
+		font-weight: 150;
+		margin-top: 20px;
 	}
 
 	/*Slide*/
@@ -263,7 +275,7 @@ ESCRITORIO MEDIANO
 	/*Logotipo*/
 
 	#logo img{
-		padding:20px 10px;
+		padding:10px 10px;
 	}
 
 	/*Botonera*/
@@ -271,24 +283,26 @@ ESCRITORIO MEDIANO
 	nav#botonera{
 		margin-top: 3%;
 		width: 60%;
+		background: black;
 	}
 		
 	nav#botonera ul{
 		width: 100%;
+		background: black;
 	}
 		
 	nav#botonera ul li{
-		width: 18%;
+		width: 35%;
 		text-align: center;
-		background: #ddd;
-		margin: 3% 1%;
+		background: #000000;
+		margin: 10% 10%;
 	}
 
 	nav#botonera ul li a{
 		height: 35px;
 		line-height: 5px;
 		color: #111;
-		background: #deefdc;
+		background: #0c0c0c;
 		font-weight: 100;
 	}
 
@@ -353,7 +367,7 @@ TABLET
 	/*Logotipo*/
 
 	#logo img{
-		padding:20px 30%;
+		padding:10px 30%;
 	}
 
 	/*Botonera*/
@@ -378,7 +392,7 @@ TABLET
 		height: 35px;
 		line-height: 5px;
 		color: #111;
-		background: #deefdc;
+		background: #0c0c0c;
 		font-weight: 100;
 	}
 
@@ -507,7 +521,7 @@ PHONES
 	}
 
 	#galeria ul li img{	
-		width:100%;
+		width:80%;
 	}
 
 	/*Artículos*/

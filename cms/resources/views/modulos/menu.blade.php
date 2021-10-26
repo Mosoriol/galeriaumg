@@ -55,14 +55,14 @@
 
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/categoriasb') }}" class="nav-link">
                   <i class="fas fa-book-open"></i>
                   <p>Categoria Biografías</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/biografias') }}" class="nav-link">
                   <i class="fas fa-tools"></i>
                   <p>Biografías</p>
                 </a>

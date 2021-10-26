@@ -58,7 +58,7 @@
                 <div class="col-8" class="text-center">
                     <br>
               <br>
-              <button type="submit" class="btn btn-outline-info text-center">Agregar al slider</button>
+              <button type="submit" class="btn btn-success text-center">Agregar al slider</button>
               </div>
               </div>
             </form>

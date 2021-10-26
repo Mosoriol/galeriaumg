@@ -4,82 +4,63 @@ namespace App\Http\Controllers;
 
 use App\Inicio;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class InicioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   public function __construct()
+   {
+    $this->middleware('auth');
+
+   }
     public function index()
     {
-        return view('modulos.inicio');
+
+        $inicio = Inicio::find(1);
+        return view('modulos.inicio')->with('inicio' , $inicio);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+   
+    public function logo(Request $request)
     {
-        //
+        $inicio = Inicio::find(1);
+
+        if(request('logo')){
+
+            Storage::delete('public/'.$inicio->logo);
+
+            $rutaImg = $request['logo']->store('/', 'public');
+
+            $inicio->logo = $rutaImg;
+
+
+
+        }
+         $inicio -> save();
+
+        return redirect('inicio');
+
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Inicio  $inicio
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Inicio $inicio)
+    public function datosGenerales(Request $request)
     {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Inicio  $inicio
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Inicio $inicio)
-    {
-        //
-    }
+    $datos = request();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Inicio  $inicio
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Inicio $inicio)
-    {
-        //
-    }
+    $datosGenerales = Inicio::find(1);
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Inicio  $inicio
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Inicio $inicio)
-    {
-        //
-    }
+    $datosGenerales -> nombre = $datos['nombre'];
+    $datosGenerales -> telefono = $datos['telefono'];
+    $datosGenerales -> email = $datos['email'];
+    $datosGenerales -> direccion = $datos['direccion'];
+
+    $datosGenerales -> save();
+
+    return redirect('inicio');
+
+}
+
+    
 }
