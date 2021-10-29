@@ -9,7 +9,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Inicio</h1>
-            
+
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -47,7 +47,7 @@
                 <input type="file" name="logo" required="" >
                 <br><br>
                 <button type="submit" class="btn btn-success">Cambiar</button>
-                
+
 
               </form>
               @endif
@@ -56,11 +56,11 @@
 
             <div class="col-6">
 
-              <h2 class="bg-info">Datos generales:</h2>  
+              <h2 class="bg-info">Datos generales:</h2>
 
               @if(auth()->user()->rol == 'Administrador')
 
-               <form method="post"> 
+               <form method="post">
                       @csrf
 
                 <h3>Nombre de la página:</h3>
@@ -86,7 +86,7 @@
                @endif
 
 
-              
+
 
             </div>
             </div>
@@ -96,7 +96,7 @@
       </div>
     </div>
   </div>
-  
+
 
     </section>
     <!-- /.content -->

@@ -66,7 +66,7 @@
             
             
 
-        <iframe width="1080" height="720" src="https://www.youtube.com/embed/zd9q2YjEc3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1080" height="720" src="https://www.youtube.com/embed/8MIS_Sspido" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
         <div class="row" id="articulos">
@@ -86,7 +86,7 @@
 
                     <h1>{{ $proyecto->titulo }}</h1>
 
-                    <p>{{ $proyecto->descripcion }}</p>
+                    <p>{{ $proyecto->titulo }}</p>
 
                     <a href="{{ url('Proyecto/'.$proyecto->id) }}">
 
@@ -229,20 +229,7 @@
 
         @endif
 
- <footer class="row" id="contactenos">
-
-
-
-        <div class="container-static">
- <br>
- <br>
-            
-            <h1 class="text-center"><b>Seminario de tecnologías de la información 2021, Santa Cruz del Quiché</b></h1>
-
-            <hr>
-
-        </div>
-    </footer>
+ 
     <!-- /.content -->
   </div>
   </div>
@@ -251,6 +238,21 @@
     </div>
     </div>
     </div>
+    <footer class="row" id="contactenos">
+
+
+
+        <div class="container-static">
+ <br>
+ <br>
+  <hr>
+            
+            <h1 class="text-center"><b>Seminario de tecnologías de la información 2021, Santa Cruz del Quiché</b></h1>
+
+           
+
+        </div>
+    </footer>
 
 
 <script src="http://galeriaumg.test/cms/public/js/slide.js"></script>
