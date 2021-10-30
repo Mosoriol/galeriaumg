@@ -100,8 +100,8 @@ ARTICULOS
 =============================================*/
 
 #articulos ul li{
-	position:relative;
-	padding: 37px;
+	position: relative;
+	padding: 25px;
 }
 
 #articulos ul li button{
@@ -136,8 +136,8 @@ footer#contactenos ol{
 	position: relative;
 	list-style:none;
 	margin:auto;
-	width:215px;
-	background: silver;
+	width: 153px;
+	background: #8b1919;
 }
 	
 footer#contactenos ol li a{
@@ -153,8 +153,8 @@ footer#contactenos ol li a{
 }
 
 footer#contactenos #formulario{
-	background:rgba(0,50,100,1);
-	padding:40px;
+	background: rgb(179 40 10);
+	padding: 61px;
 }
 
 footer#contactenos #formulario form input{
