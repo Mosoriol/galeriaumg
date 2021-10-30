@@ -101,7 +101,7 @@ ARTICULOS
 
 #articulos ul li{
 	position:relative;
-	padding:20px;
+	padding: 5px;
 }
 
 #articulos ul li button{
@@ -246,8 +246,8 @@ ESCRITORIO GRANDE
 
 	#articulos ul li img{
 		float:left;
-		width:30%;
-		margin:20px 20px 20px 0 ;
+		width: 20%;
+		margin: -70px 41px 0px 0;
 	}
 		
 }
