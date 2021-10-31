@@ -1,18 +1,18 @@
      @extends('welcome')
      @section('content')
 
-        
+
      <div class="row" id="articulos">
         <div class="container" class="text-center">
-           
+
 
             <h1 class="text-center text-info bg-info width=25px"><b>Historia</b></h1>
 
             <ul>
-         
+
                 <li class="col-12">
 
-                    <img src="http://galeriaumg.test/cms/public/storage/logoumg2.png" class="img-thumbnail">
+                    <img src="http://galeriaumg.test/cms/public/storage/quiche.jpeg" class="img-thumbnail">
                     <h1>Reseña Histórica de la Universidad Mariano Gálvez</h1>
                     <p style="padding: 30px" class="text-justify">
 La Universidad Mariano Gálvez es una institución de educación superior privada de Guatemala fue aprobada como tal el 29 de enero de 1996 por el Consejo Supremo Universitario de la Universidad de San Carlos de Guatemala.<br>
@@ -34,7 +34,7 @@ Y que sus egresados, sean capaces de asumir los desafíos del mundo contemporán
 </p>
 
                     <a href="#">
-                        
+
                     <button class="btn btn-default">Leer Más</button>
                     </a>
 
