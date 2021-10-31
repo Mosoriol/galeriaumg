@@ -1,15 +1,15 @@
      @extends('welcome')
      @section('content')
 
-        
-     <div class="row" id="articulos">
+
+     <div class="row" id="pensum">
         <div class="container">
-           
+
 
             <h1 class="text-center text-info bg-info width=25px"><b>Pensum 2014</b></h1>
 
             <ul>
-         
+
                 <li class="col-8">
 
                     <img src="http://galeriaumg.test/cms/public/storage/logoumg2.png" class="img-thumbnail">
@@ -57,11 +57,11 @@ Se requiere práctica para reforzar los conceptos teóricos.
 	<h4>Investigación de operaciones:</h4> Las técnicas de investigación de operaciones se encuentran entre las herramientas más importantes para ingenieros y científicos porque proporcionan los medios más efectivos para administrar los recursos (personas, máquinas, dinero, materiales y tiempo). Se utiliza para estos modelos matemáticos para mejorar ciertos parámetros específicos, lo que permite tomar decisiones precisas.
 	Bases de datos I: En la formación de ingenieros de sistemas, el conocimiento de un DBMS es fundamental, ya que es una de las herramientas más comunes y complejas del ciclo de desarrollo de aplicaciones. Por ello los estudiantes tendrán una sólida formación en el conocimiento teórico  y práctico de un sistema de gestión de bases de datos.
 	<h4>Autómatas y lenguajes formales: </h4>Este curso tiene como objetivo presentar a los estudiantes los fundamentos teóricos de las matemáticas y los conceptos básicos de los lenguajes de programación. Los estudiantes deben adquirir la formación teórica necesaria y requerida para poder realizar un curso avanzado de compiladores y lenguajes.
-<h4>Sistemas operativos I: </h4>El curso sobre sistemas operativos tiene como objetivo hacer que los estudiantes comprendan de manera práctica y sencilla los aspectos que han sido evaluados en los sistemas operativos, desde el punto de vista del estudio de los sistemas operativos a través de su operación en el programa de gestión de operaciones y extensión o máquina virtual. 
+<h4>Sistemas operativos I: </h4>El curso sobre sistemas operativos tiene como objetivo hacer que los estudiantes comprendan de manera práctica y sencilla los aspectos que han sido evaluados en los sistemas operativos, desde el punto de vista del estudio de los sistemas operativos a través de su operación en el programa de gestión de operaciones y extensión o máquina virtual.
 <h4>Electrónica digital: </h4>El objetivo principal de esta asignatura es adquirir un nivel básico de conocimientos en electrónica digital y sentar las bases para poder realizar el análisis y diseño de circuitos electrónicos digitales complejos. <br><br>
 
 <h3>Séptimo ciclo:</h3>
-	<h4>Bases de datos II: </h4>Este curso tiene como objetivo introducir a los estudiantes a los conceptos básicos de bases de datos, sistemas de gestión de bases de datos, teoría relacional, su aplicación, desarrollar aplicaciones prácticas de plataformas y datos relacionales. Desde la teoría relacional hasta el desarrollo de modelos de datos, la capacidad de representar información y los niveles de abstracción de datos para representar la realidad de cualquier negocio. 
+	<h4>Bases de datos II: </h4>Este curso tiene como objetivo introducir a los estudiantes a los conceptos básicos de bases de datos, sistemas de gestión de bases de datos, teoría relacional, su aplicación, desarrollar aplicaciones prácticas de plataformas y datos relacionales. Desde la teoría relacional hasta el desarrollo de modelos de datos, la capacidad de representar información y los niveles de abstracción de datos para representar la realidad de cualquier negocio.
 	<h4>Análisis de Sistemas I:</h4> Este curso cubre los procesos utilizados para desarrollar software, considerando los diversos enfoques actuales. Se aplicarán métodos tradicionales y ágiles para comparar sus características y evaluar su usabilidad según el tipo de proyecto, teniendo en cuenta perspectivas como la gestión de requisitos de software, gestión de proyectos, codificación y prácticas de calidad aplicadas en el proceso de codificación.
 	<h4>Sistemas operativos II:</h4> Este curso cubre técnicas de software avanzadas relacionadas con los sistemas operativos. Los temas ofrecidos permitirán a los estudiantes diseñar, usar y analizar varios sistemas operativos existentes. El curso desarrollará un marco de referencia basado en el concepto de gestión de recursos como la memoria, el hardware y la información.
 	<h4>Arquitectura de computadoras I:</h4> En este curso el  alumno  comprenderá  la  estructura  y  funcionamiento  de  los  componentes  básicos  de  una computadora digital. Además adquirirá los conocimientos para analizar cada bloque que conforma una computadora digital, y dentro de cada bloque, analizar y comprender cómo funcionan los componentes.
@@ -75,7 +75,7 @@ Se requiere práctica para reforzar los conceptos teóricos.
 <h4>Arquitectura de computadoras II:</h4> En este curso, los estudiantes aprenderán los conceptos teóricos de la automatización, desde sus inicios hasta sus aplicaciones modernas, y cómo se utiliza para resolver problemas en la vida diaria mediante la aplicación de tecnologías de comunicación y transmisión de datos y aplicaciones inteligentes.<br><br>
 
 <h3>Noveno ciclo:</h3>
-	<h4>Administración de tecnologías de información:</h4> Este curso pretende que los estudiantes adquieran los conocimientos básicos sobre los conceptos fundamentales de tecnologías de información para apoyar a las organizaciones o empresas a lograr sus objetivos de negocio y obtener ventajas competitivas. 
+	<h4>Administración de tecnologías de información:</h4> Este curso pretende que los estudiantes adquieran los conocimientos básicos sobre los conceptos fundamentales de tecnologías de información para apoyar a las organizaciones o empresas a lograr sus objetivos de negocio y obtener ventajas competitivas.
 	<h4>Ingeniería de software: </h4>Preparará a los estudiantes para trabajar como desarrolladores de software. Ya sea que alguien quiera equilibrar los libros, editar fotografías o producir una película, no sería posible sin los programas de software. Al finalizar el curso los estudiantes estarán a la vanguardia del diseño, desarrollo y mantenimiento del software más reciente.
 	<h4>Proyecto de Graduación I: </h4>Tiene el objetivo de completar y desarrollar un proceso de investigación completo para experimentar todas las fases de un Trabajo de Graduación. Con el trabajo a desarrollar, a lo largo del curso se orientará al estudiante desde la investigación hasta la realización del trabajo de graduación.
 
@@ -94,7 +94,7 @@ Este curso ayuda a los estudiantes a adquirir habilidades de gestión y control 
 </p>
 
                     <a href="#">
-                        
+
                     <button class="btn btn-default">Leer Más</button>
                     </a>
 
