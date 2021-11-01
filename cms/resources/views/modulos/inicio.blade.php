@@ -42,13 +42,6 @@
 
                  @csrf
 
-                <h3>Cambiar logo</h3>
-
-                <input type="file" name="logo" required="" >
-                <br><br>
-                <button type="submit" class="btn btn-success">Cambiar</button>
-
-
               </form>
               @endif
 

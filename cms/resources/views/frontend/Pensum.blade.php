@@ -5,15 +5,11 @@
      <div class="row" id="pensum">
         <div class="container">
 
-
-            <h1 class="text-center text-info bg-info width=25px"><b>Pensum 2014</b></h1>
-
             <ul>
 
                 <li class="col-8">
 
-                    <img src="http://galeriaumg.test/cms/public/storage/logoumg2.png" class="img-thumbnail">
-                    <h1>PENSUM DE LA CARRERA</h1>
+                    <img src="http://galeriaumg.test/cms/public/storage/logofinal.png" class="img-thumbnail">
                     <p style="padding: 10px" class="text-justify">
 
 <h3>Primer ciclo:</h3>
